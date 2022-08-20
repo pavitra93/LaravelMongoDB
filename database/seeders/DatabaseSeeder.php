@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
             'email'     => 'john@gmail.com'
         ]);
 
-        \App\Models\Listings::factory(6)->create([
+        Listings::factory(6)->create([
             'user_id' => $user->id
         ]);
     }

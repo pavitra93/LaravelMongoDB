@@ -42,6 +42,8 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    protected $collection = 'users';
+
     public function listings()
     {
         return $this->hasMany(Listings::class, 'user_id');
